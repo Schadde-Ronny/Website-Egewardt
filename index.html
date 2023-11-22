@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/d607c76795.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hausarztpraxis-Egewardt</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          src="./Logo-Egewardt-removebg-preview (3).png"
+          alt="Logo-Egewardt"
+          width="200rem"
+        />
+        <label for="search"
+          ><input
+            type="text"
+            id="search"
+            name="Searchbar"
+            placeholder="Searchbar"
+        /></label>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a>
+            <!-- <ul class="kontakt-ul">
+              <li>Adresse:Hainstraße 112</li>
+              <li>Tel.: 0371/4015944</li>
+              <li><a href="mailto:praxis.egewardt@gmx.de">praxis.egewardt@gmx.de</a></li>
+            </ul> -->
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav>
+        <label class="toggle-container">
+          <input type="checkbox" class="toggle-checkbox" id="toggle" />
+          <div class="toggle-background">
+            <div class="toggle-switch"></div>
+          </div>
+        </label>
+        <input type="color" id="colorPicker" />
+      </nav>
+    </header>
+
+    <main>
+      <div class="Uberschrift-container">
+        <h1>Hausarztpraxis</h1>
+        <h2>Lars Egewardt</h2>
+        <h2>Facharzt für Allgemeinmedizin</h2>
+      </div>
+      <div class="sectioneins">
+        <div class="child-div">
+          <h2>Digitales Wartezimmer</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+            repellat cupiditate qui ipsum officiis at? Nam, fuga sed. Quis
+            inventore debitis quam commodi provident, facilis fugit harum
+            dolores rerum animi.
+          </p>
+          <button onclick="redirectToDrWait()">Dr.Wait</button>
+        </div>
+        <div class="child-div">
+          <h2>Termine</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            necessitatibus, cum quod voluptas maxime quia dicta rerum dolores
+            aspernatur, quibusdam excepturi animi vero laborum eligendi incidunt
+            ipsum architecto quae ab?
+          </p>
+          <button onclick="redirectToTermine()">Termin</button>
+        </div>
+        <div class="child-div">
+          <h2>Rezeptbestellung</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus asperiores labore minima, accusamus natus modi eum
+            ea, sapiente fuga incidunt quod fugit, minus nemo omnis a nostrum?
+            Nisi, illum in.
+          </p>
+          <button onclick="redirectToRezepte()">Rezepte</button>
+        </div>
+      </div>
+      <div class="sectionzwei">
+        <div class="child-div">
+          <h2>Neupatienten</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            repellendus quasi dolor molestias repudiandae, soluta debitis?
+            Officiis laudantium fugiat adipisci facere, ut a sapiente vero in ea
+            odio magnam consectetur!
+          </p>
+          <button onclick="redirectToPatient()">Patient</button>
+        </div>
+        <div class="child-div">
+          <h2>Jobs und Ausbildung</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quo
+            ipsa sapiente totam fugiat magni dolor aut sequi voluptas facilis
+            perspiciatis non cupiditate quis, excepturi adipisci in nulla ea
+            obcaecati?
+          </p>
+          <button onclick="redirectToJobs()">Jobs</button>
+        </div>
+        <div class="child-div">
+          <h2>Leistungsspektrum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illum!
+            Dolorem, odit sed vel ipsam accusantium deleniti. Ratione delectus
+            labore tempore et blanditiis culpa mollitia, quia neque perspiciatis
+            asperiores soluta?
+          </p>
+          <button onclick="redirectToLeistungen()">Unsere Leistungen</button>
+        </div>
+      </div>
+      <div class="sectiondrei">
+        <div class="child-div">
+          <h2>Facharzt gesucht?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            sapiente odio tempora blanditiis inventore repellat veniam eius at
+            voluptatem asperiores voluptates aperiam facere ab, pariatur
+            commodi, suscipit modi ipsum magni!
+          </p>
+          <button onclick="redirectToFacharztsuche()">Facharztsuche</button>
+        </div>
+        <div class="child-div">
+          <h2>Masern</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            sapiente odio tempora blanditiis inventore repellat veniam eius at
+            voluptatem asperiores voluptates aperiam facere ab, pariatur
+            commodi, suscipit modi ipsum magni!
+          </p>
+          <button onclick="redirectToMasern()">Masernimpfung</button>
+        </div>
+        <div class="child-div">
+          <h2>Bilder</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+            sapiente odio tempora blanditiis inventore repellat veniam eius at
+            voluptatem asperiores voluptates aperiam facere ab, pariatur
+            commodi, suscipit modi ipsum magni!
+          </p>
+          <button onclick="redirectToBilder()">Bilder</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="social-media">
+        <div class="social-media-child">
+          <a href="#"><i class="fa-brands fa-facebook">Facebook</i></a>
+        </div>
+        <div class="social-media-child">
+          <a href="#"><i class="fa-brands fa-twitter"> Twitter</i></a>
+        </div>
+        <div class="social-media-child">
+          <a href="#"><i class="fa-brands fa-instagram"> Instagram</i></a>
+        </div>
+      </div>
+      <div class="datenschutz">
+        <div class="datenschutz-child">
+          <a href="#"><i class="fa-solid fa-file-shield">Datenschutz</i></a>
+        </div>
+        <div class="datenschutz-child">
+          <a href="#"><i class="fa-solid fa-cookie">Cookies</i></a>
+        </div>
+        <div class="datenschutz-child">
+          <a href="#"
+            ><i class="fa-solid fa-file-contract">Nutzungsbedingungen</i></a
+          >
+        </div>
+      </div>
+      <div class="wichtig">
+        <div class="wichtig-child">
+          <a href="#"><i class="fa-solid fa-scale-balanced">Impressum</i></a>
+        </div>
+        <div class="wichtig-child">
+          <a href="#"><i class="fa-solid fa-copyright">Copyright</i></a>
+        </div>
+        <div class="wichtig-child">
+          <a href=""><i class="fa-solid fa-handshake-angle">Hilfe</i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
