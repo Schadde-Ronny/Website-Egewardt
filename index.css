@@ -53,7 +53,7 @@ input:hover{
   }
 li > a:hover {
     background: rgb(2,29,78);
-    background: linear-gradient(270deg, rgba(84, 3, 196, 0.681) 20%, rgba(31, 215, 232, 0.873) 60%);
+    background: linear-gradient(270deg, #5403c4ae 20%, rgba(31, 215, 232, 0.873) 60%);
     color: rgb(4, 4, 38);
   }
 .header {
@@ -224,6 +224,7 @@ footer {
     align-items: baseline;
     /* background-color: #715AFF; */
     background: linear-gradient(to top rgba(113,90,255,1) 5%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
+    color: rgb(4, 4, 38);
 }
 
 .social-media-child {
