@@ -226,6 +226,9 @@ footer {
     background: linear-gradient(to top rgba(113,90,255,1) 5%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
     color: rgb(4, 4, 38);
 }
+footer a {
+    color: rgb(4, 4, 38);
+}
 
 .social-media-child {
     margin: 15px;
