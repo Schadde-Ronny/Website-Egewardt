@@ -1,0 +1,80 @@
+@media (min-width:0px) and (max-width: 320px) {
+    .sectioneins {
+        display: block;
+    }
+    .sectionzwei {
+        display: block;  
+    }
+    .sectiondrei {
+        display: block;
+    }
+    .child-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    button {
+        margin: 20px;
+    }
+    h2 {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    p {
+        margin: 20px;
+        padding: 10px;
+    }
+    .arrow-down {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* #button1{
+        position: relative;
+        top: -1rem;
+    }
+    #button2 {
+        position: relative;
+        top: -1rem;
+    }
+    #button3 {
+        position: relative;
+        top: -0.8rem;
+    }
+    #button4 {
+        position: relative;
+        top: -1rem
+    }
+    #button5 {
+        position: relative;
+        top: -1rem
+    }
+    #button6 {
+        position: relative;
+        top: -1rem;
+    }
+    #button7 {
+        position: relative;
+        top: -1rem;
+        left: -0.3rem;
+    }
+    #button8 {
+        position: relative;
+        top: -1rem;
+    }
+    #button9 {
+        position: relative;
+        top: -1rem;
+    } */
+    footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    footer > a {
+        margin: 20px;
+    }
+}

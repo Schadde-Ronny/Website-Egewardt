@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Mediaquery.css">
     <script
       src="https://kit.fontawesome.com/d607c76795.js"
       crossorigin="anonymous"
@@ -15,9 +16,8 @@
       <div class="header">
         <nav>
           <ul>
-            <li><a href="#">Anfahrt</a></li>
-            <li><a href="#">Notfall</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#"> Öffnungszeiten</a></li>
           </ul>
         </nav>
         <label for="search"
@@ -29,8 +29,7 @@
         /></label>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Über uns</a></li>
+            <li><a href="DrWait.html">Dr.Wait</a></li>
             <li><a href="#">Kontakt</a></li>
           </ul>
         </nav>
@@ -54,103 +53,125 @@
       </div>
       <div class="sectioneins">
         <div class="child-div">
-          <h2>Digitales Wartezimmer</h2>
+          <h2>Notfall</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
-            repellat cupiditate qui ipsum officiis at? Nam, fuga sed. Quis
-            inventore debitis quam commodi provident, facilis fugit harum
-            dolores rerum animi.
+            Bei allen akuten lebensbedrohlichen Zuständen (z.B. Atemnot,
+            Brustschmerzen, unstillbare Bauchschmerzen, allergische Reaktionen,
+            Unfälle jeglicher Art) sollten Sie die 112 anrufen, hier wird Ihnen
+            umgehend geholfen. Für weitere Informationen klicken Sie bitte:
           </p>
-          <button onclick="redirectToDrWait()">Dr.Wait</button>
+          <p class="arrow-down">↓</p>
+
+          <button onclick="redirectToPage('button1')" id="button1">
+            Notfall
+          </button>
         </div>
         <div class="child-div">
           <h2>Termine</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            necessitatibus, cum quod voluptas maxime quia dicta rerum dolores
-            aspernatur, quibusdam excepturi animi vero laborum eligendi incidunt
-            ipsum architecto quae ab?
+            Wir sind eine reine Terminpraxis. Wir schreiben heute den Plan für
+            morgen. Ein Termin kann fast immer binnen 24 (-48) Stunden
+            realisiert werden. Es läuft alles über die Dr. Wait App. Dort können
+            Sie Termine online buchen. Für weitere Informationen klicken Sie
+            bitte:
           </p>
-          <button onclick="redirectToTermine()">Termin</button>
+          <p class="arrow-down">↓</p>
+
+          <button onclick="redirectToPage('button2')" id="button2">
+            Termin
+          </button>
         </div>
         <div class="child-div">
           <h2>Rezeptbestellung</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus asperiores labore minima, accusamus natus modi eum
-            ea, sapiente fuga incidunt quod fugit, minus nemo omnis a nostrum?
-            Nisi, illum in.
+            Sehr geehrte Patienten, hier finden Sie alle Informationen,
+            bezüglich einer Austellung Ihres Rezept. Bitte Rufen Sie nicht
+            vorher an. Für weitere Informationen klicken Sie bitte:
           </p>
-          <button onclick="redirectToRezepte()">Rezepte</button>
+
+          <p class="arrow-down">↓</p>
+
+          <button onclick="redirectToPage('button3')" id="button3">
+            Rezepte
+          </button>
         </div>
       </div>
       <div class="sectionzwei">
         <div class="child-div">
           <h2>Neupatienten</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            repellendus quasi dolor molestias repudiandae, soluta debitis?
-            Officiis laudantium fugiat adipisci facere, ut a sapiente vero in ea
-            odio magnam consectetur!
+            Da unsere Arztpraxis eine reine Terminarztpraxis ist, wissen unsere
+            Patienten, dass unsere Terminvergabe über die App Dr.Wait vergeben
+            wird. Für Neupatienten gelten gewisse Voraussetzungen. Für weitere
+            Informationen klicken Sie bitte:
           </p>
-          <button onclick="redirectToPatient()">Patient</button>
+          <p class="arrow-down">↓</p>
+          <button onclick="redirectToPage('button4')" id="button4">
+            Patient
+          </button>
         </div>
         <div class="child-div">
           <h2>Jobs und Ausbildung</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quo
-            ipsa sapiente totam fugiat magni dolor aut sequi voluptas facilis
-            perspiciatis non cupiditate quis, excepturi adipisci in nulla ea
-            obcaecati?
+            Unsere Arztpraxis sucht im Moment eine(n)
+            Auszubildende/
+            Auszubildenden zur
+          /zum Medizinischen Fachangestellten.
+            Ausbildungsdauer beträgt 3 Jahre. Die Berufsschule befindet sich in
+            Chemnitz an der Markthalle. Für weitere Informationen klicken Sie
+            bitte:
           </p>
-          <button onclick="redirectToJobs()">Jobs</button>
+          <p class="arrow-down">↓</p>
+          <button onclick="redirectToPage('button5')" id="button5">
+            Jobs
+          </button>
         </div>
         <div class="child-div">
-          <h2>Leistungsspektrum</h2>
+          <h2>Leistungen</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illum!
-            Dolorem, odit sed vel ipsam accusantium deleniti. Ratione delectus
-            labore tempore et blanditiis culpa mollitia, quia neque perspiciatis
-            asperiores soluta?
+            Wir bieten Ihnen das gesamte Spektrum der Allgemeinmedizin und
+            hausärztlichen Versorgung an. Diese betrifft Prävention, Diagnostik,
+            Therapien und Disease-Management-Programm. Für weitere Informationen
+            klicken Sie bitte:
           </p>
-          <button onclick="redirectToLeistungen()">Unsere Leistungen</button>
+          <p class="arrow-down">↓</p>
+          <button onclick="redirectToPage('button6')" id="button6">Leistungen</button>
         </div>
       </div>
       <div class="sectiondrei">
         <div class="child-div">
           <h2>Facharzt gesucht?</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
-            sapiente odio tempora blanditiis inventore repellat veniam eius at
-            voluptatem asperiores voluptates aperiam facere ab, pariatur
-            commodi, suscipit modi ipsum magni!
+            Für alle weitere Untersuchung außerhalb der Allgemeinmedizin, nutzen
+            Sie am besten die Arztsuche der Kassenärztlichen Vereinigung. Für
+            weitere Informationen klicken Sie bitte:
           </p>
-          <button onclick="redirectToFacharztsuche()">Facharztsuche</button>
+          <p class="arrow-down">↓</p>
+          <button onclick="redirectToPage('button7')" id="button7">Facharztsuche</button>
         </div>
         <div class="child-div">
-          <h2>Masern</h2>
+          <h2>Impfung</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
-            sapiente odio tempora blanditiis inventore repellat veniam eius at
-            voluptatem asperiores voluptates aperiam facere ab, pariatur
-            commodi, suscipit modi ipsum magni!
+            Es geht wieder los. Grippeimpfungen und Covidimpfungen. Beide
+            Impfungen werden für Patienten empfohlen, die an Chronischen
+            Erkrankungen leiden. Für weitere Informationen klicken Sie bitte:
           </p>
-          <button onclick="redirectToMasern()">Masernimpfung</button>
+          <p class="arrow-down">↓</p>
+          <button onclick="redirectToPage('button8')" id="button8">Impfungen</button>
         </div>
         <div class="child-div">
           <h2>Bilder</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
-            sapiente odio tempora blanditiis inventore repellat veniam eius at
-            voluptatem asperiores voluptates aperiam facere ab, pariatur
-            commodi, suscipit modi ipsum magni!
+            Wenn Sie sich für den Praxisumbau von 2021/2022 interessieren und
+            für den aktuellen Stand unserer Arztpraxis klicken Sie bitte:
           </p>
-          <button onclick="redirectToBilder()">Bilder</button>
+          <p class="arrow-down">↓</p>
+          <button onclick="redirectToPage('button9')" id="button9">Bilder</button>
         </div>
       </div>
     </main>
     <footer>
-      <div class="social-media">
+      <!-- <div class="social-media">
         <div class="social-media-child">
           <a href="#"><i class="fa-brands fa-facebook">Facebook</i></a>
         </div>
@@ -160,7 +181,7 @@
         <div class="social-media-child">
           <a href="#"><i class="fa-brands fa-instagram"> Instagram</i></a>
         </div>
-      </div>
+      </div> -->
       <div class="datenschutz">
         <div class="datenschutz-child">
           <a href="#"><i class="fa-solid fa-file-shield">Datenschutz</i></a>

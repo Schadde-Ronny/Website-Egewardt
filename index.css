@@ -58,7 +58,7 @@ li > a:hover {
   }
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #715AFF;
     color: #EDF7F6;
@@ -78,98 +78,22 @@ li > a {
     margin: 20px;
     padding: 10px;
 }
-
-
-/* Style für den Container */
-.toggle-container {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-}
-
-/* Style für die Checkbox - versteckt sie */
-.toggle-checkbox {
-    display: none;
-}
-
-/* Style für den Hintergrund des Toggle-Buttons */
-.toggle-background {
-    width: 130px;
-    height: 40px;
-    background-color: #ccc;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    overflow: hidden;
-    transition: background-color 0.3s, width 0.3s; /* Hinzugefügte Übergangseigenschaften für Hintergrundfarbe und Breite */
-}
-
-/* Style für den Schalter des Toggle-Buttons */
-.toggle-switch {
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    transition: left 0.3s; /* Änderung des Übergangseffekts auf die "left" Eigenschaft */
-}
-
-/* Style für das Farbauswahl-Element innerhalb des Toggle-Buttons */
-.color-picker {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-}
-
-/* Styling für den Toggle-Effekt */
-.toggle-checkbox:checked + .toggle-background {
-    background-color: #4CAF50; /* Hintergrundfarbe für den aktivierten Zustand */
-    width: 120px; /* Erhöhte Breite im aktivierten Zustand */
-}
-
-.toggle-checkbox:checked + .toggle-background .toggle-switch {
-    left: 85px; /* Verschiebung nach rechts im aktivierten Zustand */
-}
-
-/* Text im Hintergrund */
-.toggle-background::before {
-    content: "Farbmodus aus";
-    color: #fff;
-    font-size: 12px;
-    opacity: 0.7;
-    position: absolute;
-    left: 60%;
-    transform: translateX(-50%);
-    white-space: nowrap; /* Verhindert das Umbruch des Textes */
-}
-
-.toggle-checkbox:checked + .toggle-background::before {
-    position: absolute;
-    left: 35%;
-    content: "Farbmodus an";
-    color: #333;
-}
-
 .sectioneins {
     display: flex;
     justify-content: baseline;
     margin: 20px;
     padding: 10px;
-    background-color: #71A9F7;
     text-align: center;
+}
+.arrow-down {
+    font-size: 50px;
+    font-weight: bolder;
 }
 .sectionzwei {
     display: flex;
     justify-content: baseline;
     margin: 20px;
     padding: 10px;
-    background-color: #81A9F0;
     text-align: center;
 }
 .sectiondrei {
@@ -177,7 +101,6 @@ li > a {
     justify-content: baseline;
     margin: 20px;
     padding: 10px;  
-    background-color: #91A9F0;
     text-align: center;
 }
 .sectioneins div {
@@ -191,6 +114,21 @@ li > a {
 .sectiondrei div {
     margin: 15px;
     padding: 7.5px;
+}
+.sectioneins  {
+    margin: 15px;
+    padding: 7.5px;
+}
+.sectionzwei {
+    margin: 15px;
+    padding: 7.5px;
+}
+.sectiondrei  {
+    margin: 15px;
+    padding: 7.5px;
+}
+.child-div  {
+    width: 30%;
 }
 button {
     margin: 15px;
@@ -218,30 +156,80 @@ button {
     background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
     color: rgb(4, 4, 38);
   }
+#button1{
+    position: relative;
+    top: 1rem;
+}
+#button2 {
+    position: relative;
+    top: 1rem;
+}
+#button3 {
+    position: relative;
+    top: 3.5rem;
+}
+#button4 {
+    position: relative;
+    top: 2rem
+}
+#button5 {
+    position: relative;
+    top: 1rem
+}
+#button6 {
+    position: relative;
+    top: 2.2rem;
+}
+#button7 {
+    position: relative;
+    top: 2rem;
+}
+#button8 {
+    position: relative;
+    top: 0.9rem;
+}
+#button9 {
+    position: relative;
+    top: 3.3rem;
+}
+
 footer {
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: space-evenly; 
+     align-items: center;
     /* background-color: #715AFF; */
     background: linear-gradient(to top rgba(113,90,255,1) 5%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
     color: rgb(4, 4, 38);
 }
 footer a {
-    color: rgb(4, 4, 38);
+    margin: 15px;
+    padding: 7.5px 7.5px;
+    cursor: pointer;
+    color: rgb(234, 234, 234);
+    transition: 0.6s;
+    border-radius: 1rem;
 }
+footer a:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
 
 .social-media-child {
     margin: 15px;
     padding: 7.5px;
     font-size: 10px;
+    background: linear-gradient(to right #5E63E4 15%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
 }
 .datenschutz-child {
     margin: 15px;
     padding: 7.5px;
     font-size: 10px;
+    background: linear-gradient(to left #5E63E4 15%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
 }
 .wichtig-child {
     margin: 15px;
     padding: 7.5px;
     font-size: 10px;
+    background: linear-gradient(to bottom #5E63E4 15%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
 }
