@@ -23,7 +23,7 @@ const pageMapping = {
       alert(`Leider ist diese Seite für "${buttonText}" in Bearbeitung. Bitte versuchen Sie es später noch einmal.`);
     }
   }
-  const menuToggle = document.getElementById("menuToggle");
+const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".main-ul");
 const bars = document.querySelectorAll(".bar");
 
@@ -34,9 +34,9 @@ menuToggle.addEventListener("click", function() {
 
   if (isOpen) {
     // Öffnen des Menüs
-    navLinks.classList.add("menu-open");
+    navLinks.classList.toggle("menu-open");
     // Kreuzsymbol anzeigen
-    bars[0].style.transform = "rotate(-45deg) translate(-5px, 6px)";
+    bars[0].style.transform = "rotate(-45deg) translate(-7px, 6px)";
     bars[1].style.opacity = 0;
     bars[2].style.transform = "rotate(45deg) translate(-5px, -6px)";
   } else {
@@ -47,4 +47,5 @@ menuToggle.addEventListener("click", function() {
     bars[1].style.opacity = 1;
     bars[2].style.transform = "none";
   }
+  console.log(navLinks);
 });
