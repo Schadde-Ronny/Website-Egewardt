@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="Mediaquery.css">
+    <link rel="stylesheet" href="Mediaquery.css" />
     <script
       src="https://kit.fontawesome.com/d607c76795.js"
       crossorigin="anonymous"
@@ -19,22 +19,29 @@
             <li><a href="#">Home</a></li>
             <li><a href="#"> Öffnungszeiten</a></li>
           </ul>
-        </nav>
-        <label for="search"
-          ><input
-            type="text"
-            id="search"
-            name="Searchbar"
-            placeholder="Searchbar"
-        /></label>
-        <nav>
-          <ul>
+          <ul class="main-ul">
             <li><a href="DrWait.html">Dr.Wait</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li class="dropdown">
+              <a href="#">Kontaktdaten ▼</a>
+              <ul class="dropdown-content">
+                <li class="li-child">Adresse: Hainstr. 112/ 09130 Chemnitz</li>
+                <li class="li-child">
+                  Telefon: 0371 / 40 15 944 Fax: 0371 / 40 15 946
+                </li>
+                <li class="test-li">
+                  E-Mail:
+                  <a href="mailto:Praxis.Egewardt@gmx.de" id="email-link"
+                    >Praxis.Egewardt@gmx.de</a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
-      <!-- <nav>
+    </header>
+
+    <!-- <nav>
         <label class="toggle-container">
           <input type="checkbox" class="toggle-checkbox" id="toggle" />
           <div class="toggle-background">
@@ -43,7 +50,6 @@
         </label>
         <input type="color" id="colorPicker" />
       </nav> -->
-    </header>
 
     <main>
       <div class="Uberschrift-container">
@@ -113,18 +119,14 @@
         <div class="child-div">
           <h2>Jobs und Ausbildung</h2>
           <p>
-            Unsere Arztpraxis sucht im Moment eine(n)
-            Auszubildende/
-            Auszubildenden zur
-          /zum Medizinischen Fachangestellten.
+            Unsere Arztpraxis sucht im Moment eine(n) Auszubildende/
+            Auszubildenden zur /zum Medizinischen Fachangestellten.
             Ausbildungsdauer beträgt 3 Jahre. Die Berufsschule befindet sich in
             Chemnitz an der Markthalle. Für weitere Informationen klicken Sie
             bitte:
           </p>
           <p class="arrow-down">↓</p>
-          <button onclick="redirectToPage('button5')" id="button5">
-            Jobs
-          </button>
+          <button onclick="redirectToPage('button5')" id="button5">Jobs</button>
         </div>
         <div class="child-div">
           <h2>Leistungen</h2>
@@ -135,7 +137,9 @@
             klicken Sie bitte:
           </p>
           <p class="arrow-down">↓</p>
-          <button onclick="redirectToPage('button6')" id="button6">Leistungen</button>
+          <button onclick="redirectToPage('button6')" id="button6">
+            Leistungen
+          </button>
         </div>
       </div>
       <div class="sectiondrei">
@@ -147,7 +151,9 @@
             weitere Informationen klicken Sie bitte:
           </p>
           <p class="arrow-down">↓</p>
-          <button onclick="redirectToPage('button7')" id="button7">Facharztsuche</button>
+          <button onclick="redirectToPage('button7')" id="button7">
+            Facharztsuche
+          </button>
         </div>
         <div class="child-div">
           <h2>Impfung</h2>
@@ -157,7 +163,9 @@
             Erkrankungen leiden. Für weitere Informationen klicken Sie bitte:
           </p>
           <p class="arrow-down">↓</p>
-          <button onclick="redirectToPage('button8')" id="button8">Impfungen</button>
+          <button onclick="redirectToPage('button8')" id="button8">
+            Impfungen
+          </button>
         </div>
         <div class="child-div">
           <h2>Bilder</h2>
@@ -166,7 +174,9 @@
             für den aktuellen Stand unserer Arztpraxis klicken Sie bitte:
           </p>
           <p class="arrow-down">↓</p>
-          <button onclick="redirectToPage('button9')" id="button9">Bilder</button>
+          <button onclick="redirectToPage('button9')" id="button9">
+            Bilder
+          </button>
         </div>
       </div>
     </main>

@@ -23,3 +23,28 @@ const pageMapping = {
       alert(`Leider ist diese Seite für "${buttonText}" in Bearbeitung. Bitte versuchen Sie es später noch einmal.`);
     }
   }
+  const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".main-ul");
+const bars = document.querySelectorAll(".bar");
+
+let isOpen = false;
+
+menuToggle.addEventListener("click", function() {
+  isOpen = !isOpen;
+
+  if (isOpen) {
+    // Öffnen des Menüs
+    navLinks.classList.add("menu-open");
+    // Kreuzsymbol anzeigen
+    bars[0].style.transform = "rotate(-45deg) translate(-5px, 6px)";
+    bars[1].style.opacity = 0;
+    bars[2].style.transform = "rotate(45deg) translate(-5px, -6px)";
+  } else {
+    // Schließen des Menüs
+    navLinks.classList.remove("menu-open");
+    // Bürgermenüsymbol anzeigen
+    bars[0].style.transform = "none";
+    bars[1].style.opacity = 1;
+    bars[2].style.transform = "none";
+  }
+});

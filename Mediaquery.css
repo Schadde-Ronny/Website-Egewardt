@@ -1,4 +1,15 @@
 @media (min-width:0px) and (max-width: 320px) {
+    .menu-toggle {
+        display: block; /* Auf kleinen Bildschirmen anzeigen */
+      }
+      .main-ul {
+        display: none; /* Standardmäßig ausgeblendet */
+      }
+    
+      .menu-open .main-ul {
+        display: block; /* Einblenden, wenn das Bürgermenü aktiviert ist */
+        background-color: red;
+      }
     .sectioneins {
         display: block;
     }
@@ -29,44 +40,6 @@
         margin: 0;
         padding: 0;
     }
-
-    /* #button1{
-        position: relative;
-        top: -1rem;
-    }
-    #button2 {
-        position: relative;
-        top: -1rem;
-    }
-    #button3 {
-        position: relative;
-        top: -0.8rem;
-    }
-    #button4 {
-        position: relative;
-        top: -1rem
-    }
-    #button5 {
-        position: relative;
-        top: -1rem
-    }
-    #button6 {
-        position: relative;
-        top: -1rem;
-    }
-    #button7 {
-        position: relative;
-        top: -1rem;
-        left: -0.3rem;
-    }
-    #button8 {
-        position: relative;
-        top: -1rem;
-    }
-    #button9 {
-        position: relative;
-        top: -1rem;
-    } */
     footer {
         margin-top: 50px;
         display: flex;
