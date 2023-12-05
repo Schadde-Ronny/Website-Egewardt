@@ -113,7 +113,10 @@
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-
+    header {
+        margin: 20px;
+        padding: 10px;
+    }
      .main-ul{
         display: flex;
       }
