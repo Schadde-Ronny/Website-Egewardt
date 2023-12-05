@@ -2,13 +2,74 @@
     .menu-toggle {
         display: block; /* Auf kleinen Bildschirmen anzeigen */
       }
-      .main-ul {
-        display: none; /* Standardmäßig ausgeblendet */
+     .main-ul{
+        display: none;
       }
-    
-      .menu-open .main-ul  {
-        display: block;/* Einblenden, wenn das Bürgermenü aktiviert ist */
-        background-color: red;
+      .menu-open.main-ul {
+        display: block; /* Einblenden, wenn das Bürgermenü aktiviert ist */
+      }
+      .menu-open.main-ul li {
+        margin: 25px;
+        padding: 12.5px;
+      }
+    .sectioneins {
+        display: block;
+    }
+    .sectionzwei {
+        display: block;  
+    }
+    .sectiondrei {
+        display: block;
+    }
+    .child-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    button {
+        margin: 20px;
+    }
+    h1{
+        margin: 10px;
+        padding: 5px;
+    }
+    h2 {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    p {
+        margin: 20px;
+        padding: 10px;
+    }
+    .arrow-down {
+        margin: 0;
+        padding: 0;
+    }
+    footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    footer > a {
+        margin: 20px;
+    }
+}
+@media (min-width:321px) and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Auf kleinen Bildschirmen anzeigen */
+      }
+     .main-ul{
+        display: none;
+      }
+      .menu-open.main-ul {
+        display: block; /* Einblenden, wenn das Bürgermenü aktiviert ist */
+      }
+      .menu-open.main-ul li {
+        margin: 25px;
+        padding: 12.5px;
       }
     .sectioneins {
         display: block;
@@ -51,18 +112,12 @@
         margin: 20px;
     }
 }
-@media (min-width:321px) and (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Auf kleinen Bildschirmen anzeigen */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+     .main-ul{
+        display: flex;
       }
-      .main-ul {
-        display: none; /* Standardmäßig ausgeblendet */
-      }
-    
-      .menu-open .main-ul {
-        display: block; /* Einblenden, wenn das Bürgermenü aktiviert ist */
-        background-color: red;
-      }
+
     .sectioneins {
         display: block;
     }
