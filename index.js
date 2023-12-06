@@ -45,3 +45,15 @@ menuToggle.addEventListener("click", function() {
   }
   console.log(navLinks);
 });
+
+function quartalMeldung(){
+  const now = new Date();
+  const quartal = Math.floor((now.getMonth()+ 3)/ 3);
+  if (quartal % 2 === 0){
+    document.querySelector("#quartalmeldung").innerText = 'Update: Wir nehmen aktuell wieder Neupatienten auf für mehr Informationen gehen Sie bitte unter Neupatienten.'
+  } else {
+    document.querySelector("#quartalmeldung").innerText = 'Update: Wir nehmen aktuell leider keine Neupatienten mehr auf'
+  }
+}
+quartalMeldung();
+setInterval(quartalMeldung, 3 * 30 * 24 * 60 * 60 * 1000);

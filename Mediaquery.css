@@ -1,4 +1,4 @@
-@media (min-width:0px) and (max-width: 320px) {
+@media (min-width:320px) and (max-width: 768px) {
     .menu-toggle {
         display: block; /* Auf kleinen Bildschirmen anzeigen */
       }
@@ -57,19 +57,9 @@
         margin: 20px;
     }
 }
-@media (min-width:321px) and (max-width: 768px) {
+@media (min-width:769px) and (max-width: 1024px) {
     .menu-toggle {
-        display: block; /* Auf kleinen Bildschirmen anzeigen */
-      }
-     .main-ul{
-        display: none;
-      }
-      .menu-open.main-ul {
-        display: block; /* Einblenden, wenn das Bürgermenü aktiviert ist */
-      }
-      .menu-open.main-ul li {
-        margin: 25px;
-        padding: 12.5px;
+        display: none; /* Auf kleinen Bildschirmen anzeigen */
       }
     .sectioneins {
         display: block;
@@ -102,63 +92,13 @@
         padding: 0;
     }
     footer {
-        margin-top: 50px;
+        margin-top: 60px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         text-align: center;
     }
     footer > a {
         margin: 20px;
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-    header {
-        margin: 20px;
         padding: 10px;
-    }
-     .main-ul{
-        display: flex;
-      }
-
-    .sectioneins {
-        display: block;
-    }
-    .sectionzwei {
-        display: block;  
-    }
-    .sectiondrei {
-        display: block;
-    }
-    .child-div {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-    }
-    button {
-        margin: 20px;
-    }
-    h2 {
-        margin-top: 20px;
-        padding: 10px;
-    }
-    p {
-        margin: 20px;
-        padding: 10px;
-    }
-    .arrow-down {
-        margin: 0;
-        padding: 0;
-    }
-    footer {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    footer > a {
-        margin: 20px;
     }
 }

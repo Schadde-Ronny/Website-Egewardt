@@ -5,6 +5,9 @@
     list-style: none;
     text-decoration: none;
 }
+#quartalmeldung{
+    text-align: center;
+}
 body {
     background-color: #5887FF;
     color: #102E4A;
@@ -12,6 +15,8 @@ body {
 }
 header {
     background: linear-gradient(to top #5E63E4 15%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
+    margin: 20px;
+    padding: 10px;
 }
 input { 
     margin: 15px;
