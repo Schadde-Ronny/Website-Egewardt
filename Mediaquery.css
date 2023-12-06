@@ -1,19 +1,23 @@
 @media (min-width:320px) and (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Auf kleinen Bildschirmen anzeigen */
+        display: block; 
       }
      .main-ul{
         display: none;
       }
       .menu-open.main-ul {
-        display: block; /* Einblenden, wenn das Bürgermenü aktiviert ist */
+        display: block; 
       }
       .menu-open.main-ul li {
         margin: 25px;
         padding: 12.5px;
       }
+      .Uberschrift-container{
+        text-align: center;
+      }
     .sectioneins {
         display: block;
+        text-align: center;
     }
     .sectionzwei {
         display: block;  
@@ -59,7 +63,7 @@
 }
 @media (min-width:769px) and (max-width: 1024px) {
     .menu-toggle {
-        display: none; /* Auf kleinen Bildschirmen anzeigen */
+        display: none; 
       }
     .sectioneins {
         display: block;

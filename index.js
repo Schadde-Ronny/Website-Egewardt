@@ -1,7 +1,7 @@
 // Definieren Sie das pageMapping-Objekt zuerst
 const pageMapping = {
-    'button1': 'Notfall.html',
-    'button2': 'Termine.html',
+    // 'button1': 'Notfall.html',
+    // 'button2': 'Termine.html',
     // 'button3': 'Rezepte.html',
     // 'button4': 'Patienten.html',
     // 'button5': 'Jobs.html',
