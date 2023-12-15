@@ -5,35 +5,20 @@
     list-style: none;
     text-decoration: none;
 }
-#quartalmeldung{
+#quartalmeldung {
     text-align: center;
+    margin: 20px;
+    padding: 10px;
 }
 body {
-    background-color: #5887FF;
     color: #102E4A;
-    background: linear-gradient( rgba(113,90,255,1) 0%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
+    background: linear-gradient(   #5E63E4 0%, rgba(255,255,255,1) 80%);
 }
 header {
     background: linear-gradient(to top #5E63E4 15%, rgba(88,135,255,1) 35%, rgba(113,169,247,1) 100%);
     margin: 20px;
     padding: 10px;
 }
-input { 
-    margin: 15px;
-    font-size: 1rem;
-    padding: 7.5px 7.5px;
-    border: none;
-    outline: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: rgb(14, 14, 26);
-    color: rgb(234, 234, 234);
-    font-weight: 700;
-    transition: 0.6s;
-    box-shadow: 0px 0px 60px #1f4c65;
-    /* -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); */
-  }
 li > a {
     margin: 15px;
     font-size: 1rem;
@@ -49,12 +34,7 @@ li > a {
     transition: 0.6s;
     box-shadow: 0px 0px 60px #1f4c65;
     -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-  }
-input:hover{
-    background: rgb(2,29,78);
-    background: linear-gradient(270deg, rgba(84, 3, 196, 0.681) 20%, rgba(31, 215, 232, 0.873) 60%);
-    color: rgb(4, 4, 38);
-  }
+}
 li > a:hover {
     background: rgb(2,29,78);
     background: linear-gradient(270deg, #5403c4ae 20%, rgba(31, 215, 232, 0.873) 60%);
@@ -79,9 +59,6 @@ li > a:hover {
 .header {
 display: flex;
 justify-content: center;
-}
-nav {
-display: flex;
 }
 header ul {
     display: flex;
@@ -160,7 +137,6 @@ button {
     font-weight: 700;
     transition: 0.6s;
     box-shadow: 0px 0px 60px #1f4c65;
-    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
   }
 button:active {
     scale: 0.92;
@@ -168,8 +144,9 @@ button:active {
   
 button:hover {
     background: rgb(2,29,78);
-    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 20%, rgba(31, 215, 232, 0.873) 60%);
     color: rgb(4, 4, 38);
+    
 }
 .menu-toggle {
     display: none;
@@ -206,46 +183,6 @@ button:hover {
     transition: 0.6s;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-#button1{
-    position: relative;
-    top: 1rem;
-}
-#button2 {
-    position: relative;
-    top: 1rem;
-}
-#button3 {
-    position: relative;
-    top: 3.5rem;
-}
-#button4 {
-    position: relative;
-    top: 2rem
-}
-#button5 {
-    position: relative;
-    top: 1rem
-}
-#button6 {
-    position: relative;
-    top: 2.2rem;
-}
-#button7 {
-    position: relative;
-    top: 2rem;
-}
-#button8 {
-    position: relative;
-    top: 0.9rem;
-}
-#button9 {
-    position: relative;
-    top: 3.3rem;
-}
-
 footer {
     display: flex;
     justify-content: space-evenly; 
@@ -258,7 +195,7 @@ footer a {
     margin: 15px;
     padding: 7.5px 7.5px;
     cursor: pointer;
-    color: rgb(234, 234, 234);
+    color:black;
     transition: 0.6s;
     border-radius: 1rem;
 }
