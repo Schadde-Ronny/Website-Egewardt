@@ -151,37 +151,10 @@ button:hover {
 .menu-toggle {
     display: none;
 }
-  .dropdown {
-    position: relative;
-}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 1px;
-    /* background-color: #333; */
-    z-index: 1;
-    list-style: none;
-}
-.test-li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.dropdown-content li {
-    padding: 5px;
-    text-align: left;
-    margin: 5px;
-    border: none;
-    outline: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: rgb(14, 14, 26);
-    color: rgb(234, 234, 234);
-    transition: 0.6s;
-}
+
+
 
 footer {
     display: flex;
